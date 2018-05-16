@@ -9,6 +9,7 @@
   <title>spring JPA 的基本使用 | Bolg</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Spring Data JPA的使用（一）一.首先， JPA是什么呢？百度的解释： JPA是Java Persistence API的简称，中文名Java持久层API，是JDK 5.0注解或XML描述对象－关系表的映射关系，并将运行期的实体对象持久化到数据库中。Sun引入新的JPA ORM规范出于两个原因：其一，简化现有Java EE和Java SE应用开发工作；其二，Sun希望整合ORM技术，实">
+<meta name="keywords" content="spring boot JPA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="spring JPA 的基本使用">
 <meta property="og:url" content="http://yoursite.com/2018/05/17/spring-JPA-的基本使用/index.html">
@@ -18,7 +19,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/05/17/spring-JPA-的基本使用/新建项目.png">
 <meta property="og:image" content="http://yoursite.com/2018/05/17/spring-JPA-的基本使用/数据库.png">
 <meta property="og:image" content="http://yoursite.com/2018/05/17/spring-JPA-的基本使用/user1.png">
-<meta property="og:updated_time" content="2018-05-16T13:19:41.713Z">
+<meta property="og:updated_time" content="2018-05-16T14:26:58.240Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="spring JPA 的基本使用">
 <meta name="twitter:description" content="Spring Data JPA的使用（一）一.首先， JPA是什么呢？百度的解释： JPA是Java Persistence API的简称，中文名Java持久层API，是JDK 5.0注解或XML描述对象－关系表的映射关系，并将运行期的实体对象持久化到数据库中。Sun引入新的JPA ORM规范出于两个原因：其一，简化现有Java EE和Java SE应用开发工作；其二，Sun希望整合ORM技术，实">
@@ -182,6 +183,7 @@
 <p>JPA是Java Persistence API的简称，中文名Java持久层API，是JDK 5.0注解或XML描述对象－关系表的映射关系，并将运行期的实体对象持久化到数据库中。<br>Sun引入新的JPA ORM规范出于两个原因：其一，简化现有Java EE和Java SE应用开发工作；其二，Sun希望整合ORM技术，实现天下归一。</p>
 </blockquote>
 <p>JPA， Java Persistence Api， 就是用java实体对象和关系型数据库建立起映射关系，通过面向对象编程的思想操作关系型数据库的规范。</p>
+<a id="more"></a>
 <h2 id="二-如何使用-JPA"><a href="#二-如何使用-JPA" class="headerlink" title="二.如何使用 JPA"></a>二.如何使用 JPA</h2><h3 id="1-创建一个springboot项目"><a href="#1-创建一个springboot项目" class="headerlink" title="1.创建一个springboot项目"></a>1.创建一个springboot项目</h3><p><img src="/2018/05/17/spring-JPA-的基本使用/新建项目.png" alt="新建项目.jpg"><br>添加依赖</p>
 <blockquote>
 <p>pom.xml<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
@@ -234,7 +236,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">spring boot JPA</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Spring-Data-JPA//" class="article-tag-list-link color1">Spring Data JPA</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -424,6 +448,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">MD用法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">spring boot JPA</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
